@@ -1,0 +1,341 @@
+   /* header css */
+
+
+   body{
+    background-color: rgba(115, 139, 98, 0.313);
+    animation: imganimation 0.2s ease-in-out;
+}
+
+header{
+    background-color: rgba(79, 123, 103, 0.669);
+    width: auto;
+}
+
+/* my name heading */
+#h2-name{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    position: relative;
+    margin-left: 25px;
+}
+
+/* navigation-bar */
+.ul{
+    float:right;
+    display: flex;
+    font-size: 19px;
+    margin-right: 8px;
+}
+
+.li > a{
+    color: blueviolet;
+    text-align: center;
+}
+
+.nav-bar-a{
+    text-decoration : none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    color: blueviolet;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+
+hr{
+    width: 70%;
+    margin-top: 70px;
+}
+
+/* code / travel */
+#head-p{
+    padding-left: 25px;
+    margin-top: -2px;
+}
+
+
+#head-p > a{
+    text-decoration: none;
+    color: black;
+}
+
+                    /* main-css */
+
+/* my img */
+#me-img{
+    height: 80vh;
+    position: relative;
+    width:34%;
+    margin-left: 13%;
+    /*border-radius: 50%;*/
+    margin-top: -22%;
+    animation: imganimation 2s;
+    animation-delay: 0.2s;
+}
+
+/* hi-heading */
+.main-name-span{
+    font-family: sans-serif;
+    text-align: start;
+}
+
+/* hi-heading */
+#main-heading-hi{
+    font-size: 90px;
+    float: right;
+    margin-right: 3vw;
+    position: relative;
+    animation: hianimation 2s ease;
+    animation-delay: 0.2s;
+}
+
+/* discription of me */
+#main-disc-p{
+    margin-left: 57.5%;
+    width: 30%;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 1px;
+    line-height: 1.5;
+    animation: discanimation 2s ease;
+    animation-delay: 0.2s;
+}
+
+/* skills div */
+.reveal{
+    margin-top: 60px;
+    height: auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+/* inner div of skills div */
+.reveal > div{
+    text-align: center;
+    height: 250px;
+}
+
+/* technical-skills heading  */
+.resume-heading{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 50%;
+}   
+
+.resume-div,#pre,.li{
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: rgb(0, 0, 0);
+}    
+
+/* contact info / form container  */
+.container{
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: repeat(2,50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* contact info is item1 */
+.item1{
+    margin-left: 20%;
+}
+
+/* form is item2 */
+.item2{
+    margin-left: 5%;
+}
+
+/* inputs */
+.input-info{
+    background: transparent;
+    border: 1.7px solid black;
+    height: 40px;
+    width: 200px;
+}
+
+/* text-area  */
+textarea{
+    background: transparent;
+    border: 1.7px solid black;
+    width: 350px;
+}
+
+/* main-form */
+form{
+    line-height: 5;
+}
+
+/* submit-button */
+button{
+    height: 150px;
+    background-color: rgba(79, 123, 103, 0.669);
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 23px;
+    font-family: sans-serif;
+    display: flex;
+    cursor: pointer;
+    margin-left: 460px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -170px;
+}
+
+/* i tags for social */
+#svg-div{
+    margin-left: 160px;
+    letter-spacing: 7px;
+} 
+
+/* links for social */
+.a{
+    text-decoration: none;
+    color: black;
+}
+
+#i1, #i2, #i3, #i4{
+    font-size: 30px;
+} 
+
+/* copyright-line */
+#copyright-p{
+    color: black;
+    font-size: small;
+    text-align: center;
+} 
+
+/* animations css  */
+
+
+.nav-bar-a:hover{
+    color: lightgray;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background: transparent;
+    transition: all 0.4s ease 0s ;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    header{
+        width: auto;
+    }
+    .ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #img-div{
+        margin-top: -70%;
+
+    }
+    #main-heading-hi{
+        font-size: 40px;
+        margin-right: 100px;
+        visibility: hidden;
+    }
+    #me-img{
+        height: 100px;
+        width: 100px;
+        margin-left: 60%;
+    }
+    #main-disc-p{
+        width: 200%;
+        margin-left: 170px;
+        display: inline;
+        margin-inline-start: 1em;
+        /* margin-top: 70%; */
+    }
+    hr{
+        display: none;
+    }
+    #resume-div{
+        margin-top: 50%;
+    }
+    .resume-div{
+        width: 100%;
+        margin-top: 20%;
+        margin-left: -48%;
+    }
+    #pre{
+        margin-left: -15%;
+        font-size: 16px;
+        width: 100%;
+        display: inline;
+    }
+    #tech-heading{
+        font-size: 28px;
+        margin-top: -40%;
+    }
+    #skills-div{
+        margin-top: -3%;
+    }
+    #others-li{
+        font-size: 14px;
+        margin-top: 2%;
+    }
+    .container{
+        display: block;            
+    }
+    .item1{
+        margin-left: 2%;
+        margin-top: -30%;
+    }
+    .lname{
+        display: inline-block;
+    }
+    #text-area{
+        width: 230px;
+    }
+    button{
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+        margin-left: -4%;
+    }
+    }
+
+    
+    @keyframes imganimation {
+    0%{
+        opacity: 0;
+        transform: rotateY(120deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+
+    }
+}
+
+
+@keyframes hianimation {
+    0%{
+        left:150px; right:150px;
+        opacity: 0;
+    }
+    100%{
+        left:0px; right:0px;
+        opacity: 1;
+    }
+}   
+
+@keyframes discanimation {
+    0%{
+        right: -150px;left: -150px;
+        opacity: 0;
+    }
+    100%{
+        left:0px; right:0px;
+        opacity: 1;
+    }
+}
